@@ -34,9 +34,9 @@ return [
                 'driverClass' => Driver::class,
                 'params' => [
                     'host' => '127.0.0.1',
-                    'user' => 'skeleton',
-                    'password' => 'skeleton',
-                    'dbname' => 'skeleton',
+                    'user' => 'root',
+                    'password' => '',
+                    'dbname' => 'projectskills',
                     'port' => '3306',
                     'driverOptions' => [
                         1002 => 'SET NAMES utf8',

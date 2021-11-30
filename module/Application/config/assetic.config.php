@@ -40,6 +40,7 @@ return [
 
                 'base_css' => [
                     'assets' => [
+                        'css/master.css',
                         'css/tailwind-compiled.css',
                     ],
                     'options' => [

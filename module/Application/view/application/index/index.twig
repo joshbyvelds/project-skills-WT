@@ -1,10 +1,7 @@
 <!-- This example requires Tailwind CSS v2.0+ -->
-<div class="bg-white">
+<div class="bg-white splash">
     <div class="max-w-7xl mx-auto text-center py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
-        <h2 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-            <span class="block">Ready to dive in?</span>
-            <span class="block text-gray-600">Register to create API Tokens today.</span>
-        </h2>
+        <div class="logo"></div>
 
         {% if layout().user %}
             <div class="mt-8 flex justify-center">
@@ -17,7 +14,59 @@
 
             {% include 'application/index/tokeninterface' %}
 
+            <div class="mt-8 flex justify-center">
+                <table>
+                    <tr>
+                        <th colspan="6">Skills</th>
+                    </tr>
+                    <tr>
+                        <th>Logo</th>
+                        <th>Name</th>
+                        <th>Hours</th>
+                        <th>Days</th>
+                        <th>Progress</th>
+                        <th>Actions</th>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Drawing</td>
+                        <td>1.23</td>
+                        <td>1</td>
+                        <td><progress>12%</progress></td>
+                        <td><button>Add Day</button><button>Delete</button></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="mt-8 flex justify-center">
+                <table>
+                    <tr>
+                        <th colspan="5">Projects</th>
+                    </tr>
+                    <tr>
+                        <th>Type</th>
+                        <th>Preview</th>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Hours</th>
+                    </tr>
+                    <tr>
+                        <td>Drawing</td>
+                        <td></td>
+                        <td>Cloth on Stool</td>
+                        <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae consequatur corporis illo nihil nobis obcaecati omnis quam recusandae velit? Asperiores cupiditate dolor doloribus ducimus esse ex repellat sapiente similique sunt.</td>
+                        <td>1.23</td>
+                    </tr>
+                </table>
+            </div>
+
+
         {% else %}
+            <h2 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                <span class="block">Ready to dive in?</span>
+                <span class="block text-gray-600">Register to create API Tokens today.</span>
+            </h2>
+
             <div class="mt-8 flex justify-center">
                 <div class="inline-flex rounded-md shadow">
                     <a href="/register" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700">
